@@ -1,7 +1,7 @@
 "use client";
 
 import Hero from "@/components/hero/page";
-import { useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 
 export default function TripPlannerPage() {
   const [trip, setTrip] = useState({
@@ -12,7 +12,7 @@ export default function TripPlannerPage() {
     endDate: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e:React.ChangeEvent<HTMLInputElement>) => {
     setTrip({
       ...trip,
       [e.target.name]: e.target.value,
