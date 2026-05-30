@@ -12,7 +12,7 @@ export default function TripPlannerPage() {
     endDate: "",
   });
 
-  const handleChange = (e:React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e:React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setTrip({
       ...trip,
       [e.target.name]: e.target.value,
