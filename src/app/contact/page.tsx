@@ -154,7 +154,7 @@ export default function ContactPage() {
                     Message
                   </label>
                   <textarea
-                    rows=6
+                    rows={6}
                     placeholder="Tell us about your travel plans..."
                     className="w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-cyan-500"
                   />
