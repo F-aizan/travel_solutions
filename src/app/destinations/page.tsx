@@ -58,6 +58,7 @@ const destinations = [
   ];
   
   export default function DestinationsPage() {
+ 
     return (
       <main className="bg-slate-50">
         {/* Hero */}
@@ -196,9 +197,10 @@ const destinations = [
               your budget, interests, and travel style.
             </p>
 
-            <a 
-            className="mt-8 rounded-xl bg-white px-8 py-4 font-semibold text-cyan-700 cursor-pointer" 
-            href="/planner">
+            <a
+            className="mt-10 inline-block rounded-xl bg-white px-8 py-4 font-semibold text-cyan-700 cursor-pointer" 
+            href="/planner"
+            >
               Plan My Trip
             </a>
           </div>

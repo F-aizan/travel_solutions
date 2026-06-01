@@ -206,9 +206,11 @@ export default function AboutPage() {
               unforgettable travel experiences.
             </p>
   
-            <button className="mt-8 rounded-xl bg-white px-8 py-4 font-semibold text-cyan-700 transition hover:scale-105">
+            <a className="mt-8 inline-block rounded-xl bg-white px-8 py-4 font-semibold text-cyan-700 transition hover:scale-105"
+            href="/destinations"
+            >
               Start Exploring
-            </button>
+            </a>
           </div>
         </section>
       </main>

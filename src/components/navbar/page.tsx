@@ -13,7 +13,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-2xl font-bold text-blue-600"
+            className="text-2xl font-bold text-cyan-600"
           >
             Travel Solutions
           </Link>
@@ -55,9 +55,11 @@ export default function Navbar() {
               Contact
             </Link>
 
-            <button className="rounded-lg bg-blue-600 px-5 py-2 text-white hover:bg-blue-700 transition">
+            <a className="rounded-lg bg-cyan-600 px-5 py-2 text-white hover:bg-blue-700 transition" 
+            href="/planner"
+            >
               Get Started
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
