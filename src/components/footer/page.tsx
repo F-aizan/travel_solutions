@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h2 className="text-2xl font-bold text-white">
-              Travel Solutions
+              Royal Journey Tours
             </h2>
 
             <p className="mt-4 leading-relaxed text-gray-400">
@@ -128,7 +128,7 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-500 md:flex-row">
           <p>
-            © {new Date().getFullYear()} Travel Solutions. All rights
+            © {new Date().getFullYear()} Royal Journey Tours. All rights
             reserved.
           </p>
 
