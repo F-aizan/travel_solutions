@@ -15,7 +15,7 @@ export default function Navbar() {
             href="/"
             className="text-2xl font-bold text-cyan-600"
           >
-            Travel Solutions
+            <img src="logo.jpg" width="50" height="50"/>
           </Link>
 
           {/* Desktop Menu */}
