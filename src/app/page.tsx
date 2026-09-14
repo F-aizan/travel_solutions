@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <>
       <Hero 
-      image = "url('https://images.unsplash.com/photo-1666696758691-135e8bf83368')"
-      title1 = "Explore Beautiful Kashmir,"
-      title2 = "One Journey At A Time"
-      description="Find breathtaking destinations, create personalized travel plans,
-            and turn your dream vacation into reality."
+        image="url('https://images.unsplash.com/photo-1715457573748-8e8a70b2c1be')"
+        title1="Explore Beautiful Kashmir,"
+        title2="One Journey At A Time"
+        description="Find breathtaking destinations, create personalized travel plans, 
+        and turn your dream vacation into reality."
       />
       <Destinations />
       <CTA />

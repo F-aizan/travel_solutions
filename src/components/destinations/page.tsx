@@ -1,53 +1,59 @@
 const destinations = [
-    {
-      id: 1,
-      name: "Kashmir",
-      country: "India",
-      image:
-        "https://images.unsplash.com/photo-1598091383021-15ddea10925d",
-      description: "Experience breathtaking mountains, lakes, and valleys.",
-    },
-    {
-      id: 2,
-      name: "Dubai",
-      country: "UAE",
-      image:
-        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
-      description: "Luxury shopping, iconic skyscrapers, and desert adventures.",
-    },
-    {
-      id: 3,
-      name: "Paris",
-      country: "France",
-      image:
-        "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
-      description: "The city of love, culture, and world-famous landmarks.",
-    },
-    {
-      id: 4,
-      name: "Bali",
-      country: "Indonesia",
-      image:
-        "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
-      description: "Tropical beaches, temples, and stunning landscapes.",
-    },
-    {
-      id: 5,
-      name: "Switzerland",
-      country: "Switzerland",
-      image:
-        "https://images.unsplash.com/photo-1521295121783-8a321d551ad2",
-      description: "Snow-capped mountains and beautiful alpine villages.",
-    },
-    {
-      id: 6,
-      name: "Maldives",
-      country: "Maldives",
-      image:
-        "https://images.unsplash.com/photo-1573843981267-be1999ff37cd",
-      description: "Crystal-clear waters and luxurious overwater villas.",
-    },
-  ];
+  {
+    id: 1,
+    name: "Gulmarg",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1676441019594-07142b925bc2?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Ride the famous Gondola, explore snow-covered slopes, and enjoy breathtaking Himalayan views.",
+  },
+  {
+    id: 2,
+    name: "Pahalgam",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1686503069683-9029e0b2ad51?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Discover beautiful valleys, pine forests, rivers, and the scenic Betaab Valley.",
+  },
+  {
+    id: 3,
+    name: "Sonamarg",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Explore the Golden Meadow, snow-capped mountains, and the spectacular Thajiwas Glacier.",
+  },
+  {
+    id: 4,
+    name: "Yusmarg",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Escape into peaceful meadows, dense pine forests, and stunning mountain landscapes.",
+  },
+  {
+    id: 5,
+    name: "Doodhpathri",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1693999024492-8598a389ac7d?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Relax in lush green meadows surrounded by mountains, streams, and peaceful landscapes.",
+  },
+  {
+    id: 6,
+    name: "Aru Valley",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1706628416807-7994b12d64f8?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Experience stunning alpine scenery, pine forests, meadows, and beautiful mountain views.",
+  }
+];
   
   export default function Destinations() {
     return (
@@ -64,7 +70,7 @@ const destinations = [
             </h2>
   
             <p className="mx-auto mt-4 max-w-2xl text-gray-600">
-              Discover handpicked destinations around the world and
+              Discover handpicked destinations around Kashmir Valley and
               create unforgettable travel experiences.
             </p>
           </div>

@@ -1,14 +1,42 @@
 import Link from "next/link";
+import {
+  MapPin,
+  Phone,
+  Mail,
+} from "lucide-react";
+
+import {
+  siFacebook,
+  siInstagram,
+  siX,
+  siYoutube,
+} from "simple-icons";
 
 export default function Footer() {
+
+  function BrandIcon({ icon, size = 20 }) {
+    return (
+      <svg
+        role="img"
+        viewBox="0 0 24 24"
+        width={size}
+        height={size}
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d={icon.path} />
+      </svg>
+    );
+  }
   return (
     <footer className="bg-slate-950 text-gray-300">
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+
           {/* Brand */}
           <div>
             <h2 className="text-2xl font-bold text-white">
-              Royal Journey Tours
+              Royal Journey
             </h2>
 
             <p className="mt-4 leading-relaxed text-gray-400">
@@ -69,11 +97,25 @@ export default function Footer() {
             </h3>
 
             <ul className="space-y-3">
-              <li>Kashmir</li>
-              <li>Dubai</li>
-              <li>Bali</li>
-              <li>Paris</li>
-              <li>Maldives</li>
+              <li className="transition hover:text-cyan-400">
+                Gulmarg
+              </li>
+
+              <li className="transition hover:text-cyan-400">
+                Pahalgam
+              </li>
+
+              <li className="transition hover:text-cyan-400">
+                Sonamarg
+              </li>
+
+              <li className="transition hover:text-cyan-400">
+                Yusmarg
+              </li>
+
+              <li className="transition hover:text-cyan-400">
+                Doodhpathri
+              </li>
             </ul>
           </div>
 
@@ -83,42 +125,101 @@ export default function Footer() {
               Contact Us
             </h3>
 
-            <ul className="space-y-3">
-              <li>📍 Srinagar, Kashmir</li>
-              <li>📞 +91 98765 43210</li>
-              <li>✉️ info@travelsolutions.com</li>
+            <ul className="space-y-4">
+              {/* Location */}
+              <li className="flex items-start gap-3">
+                <MapPin
+                  size={20}
+                  className="mt-0.5 shrink-0 text-cyan-400"
+                />
+
+                <span>Nowhatta, Srinagar, Kashmir</span>
+              </li>
+
+              {/* Phone */}
+              <li className="flex items-center gap-3">
+                <Phone
+                  size={20}
+                  className="shrink-0 text-cyan-400"
+                />
+
+                <a
+                  href="tel:+919876543210"
+                  className="transition hover:text-cyan-400"
+                >
+                  +91 9682310254
+                </a>
+              </li>
+
+              {/* Email */}
+              <li className="flex items-center gap-3">
+                <Mail
+                  size={20}
+                  className="shrink-0 text-cyan-400"
+                />
+
+                <a
+                  href="mailto:info@travelsolutions.com"
+                  className="transition hover:text-cyan-400"
+                >
+                  royaljourneytnt786@gmail.com
+                </a>
+              </li>
             </ul>
 
             {/* Social Icons */}
-            <div className="mt-6 flex gap-4">
-              <a
-                href="#"
-                className="rounded-full bg-slate-800 p-3 transition hover:bg-cyan-500"
-              >
-                📘
-              </a>
+{/* Social Icons */}
+<div className="mt-7 flex gap-3">
 
-              <a
-                href="#"
-                className="rounded-full bg-slate-800 p-3 transition hover:bg-cyan-500"
-              >
-                📷
-              </a>
+  {/* Facebook */}
+  <a
+    href="#"
+    aria-label="Facebook"
+    className="flex h-10 w-10 items-center justify-center rounded-full
+               bg-slate-800 text-gray-300
+               transition-all duration-300
+               hover:-translate-y-1 hover:bg-[#1877F2] hover:text-white"
+  >
+    <BrandIcon icon={siFacebook} size={19} />
+  </a>
 
-              <a
-                href="#"
-                className="rounded-full bg-slate-800 p-3 transition hover:bg-cyan-500"
-              >
-                🐦
-              </a>
+  {/* Instagram */}
+  <a
+    href="#"
+    aria-label="Instagram"
+    className="flex h-10 w-10 items-center justify-center rounded-full
+               bg-slate-800 text-gray-300
+               transition-all duration-300
+               hover:-translate-y-1 hover:bg-[#E4405F] hover:text-white"
+  >
+    <BrandIcon icon={siInstagram} size={19} />
+  </a>
 
-              <a
-                href="#"
-                className="rounded-full bg-slate-800 p-3 transition hover:bg-cyan-500"
-              >
-                ▶️
-              </a>
-            </div>
+  {/* X */}
+  <a
+    href="#"
+    aria-label="X"
+    className="flex h-10 w-10 items-center justify-center rounded-full
+               bg-slate-800 text-gray-300
+               transition-all duration-300
+               hover:-translate-y-1 hover:bg-black hover:text-white"
+  >
+    <BrandIcon icon={siX} size={18} />
+  </a>
+
+  {/* YouTube */}
+  <a
+    href="#"
+    aria-label="YouTube"
+    className="flex h-10 w-10 items-center justify-center rounded-full
+               bg-slate-800 text-gray-300
+               transition-all duration-300
+               hover:-translate-y-1 hover:bg-[#FF0000] hover:text-white"
+  >
+    <BrandIcon icon={siYoutube} size={20} />
+  </a>
+
+</div>
           </div>
         </div>
 
@@ -128,27 +229,12 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-500 md:flex-row">
           <p>
-            © {new Date().getFullYear()} Royal Journey Tours. All rights
+            © {new Date().getFullYear()} Royal Journey. All rights
             reserved.
           </p>
-
-          {/* <div className="flex gap-6">
-            <Link
-              href="/privacy"
-              className="hover:text-cyan-400"
-            >
-              Privacy Policy
-            </Link>
-
-            <Link
-              href="/terms"
-              className="hover:text-cyan-400"
-            >
-              Terms of Service
-            </Link>
-          </div> */}
         </div>
       </div>
     </footer>
   );
 }
+

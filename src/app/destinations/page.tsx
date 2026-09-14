@@ -1,61 +1,88 @@
 import Hero from "@/components/hero/page";
 
 const destinations = [
-    {
-      id: 1,
-      name: "Kashmir",
-      country: "India",
-      image:
-        "https://images.unsplash.com/photo-1605649487212-47bdab064df7",
-      description: "Paradise on Earth with breathtaking valleys and lakes.",
-      price: "$499",
-    },
-    {
-      id: 2,
-      name: "Bali",
-      country: "Indonesia",
-      image:
-        "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
-      description: "Tropical beaches, temples, and stunning sunsets.",
-      price: "$699",
-    },
-    {
-      id: 3,
-      name: "Dubai",
-      country: "UAE",
-      image:
-        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
-      description: "Luxury experiences and world-class attractions.",
-      price: "$899",
-    },
-    {
-      id: 4,
-      name: "Paris",
-      country: "France",
-      image:
-        "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
-      description: "Romantic streets, culture, and iconic landmarks.",
-      price: "$999",
-    },
-    {
-      id: 5,
-      name: "Maldives",
-      country: "Maldives",
-      image:
-        "https://images.unsplash.com/photo-1573843981267-be1999ff37cd",
-      description: "Crystal-clear waters and luxury island resorts.",
-      price: "$1299",
-    },
-    {
-      id: 6,
-      name: "Switzerland",
-      country: "Switzerland",
-      image:
-        "https://images.unsplash.com/photo-1521295121783-8a321d551ad2",
-      description: "Alpine adventures and scenic mountain views.",
-      price: "$1199",
-    },
-  ];
+  {
+    id: 1,
+    name: "Gulmarg",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1676441019594-07142b925bc2?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Experience snow-covered mountains, the famous Gondola, skiing, and breathtaking alpine views.",
+  },
+  {
+    id: 2,
+    name: "Pahalgam",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1686503069683-9029e0b2ad51?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Explore peaceful valleys, pine forests, the Lidder River, and the beautiful Betaab Valley.",
+  },
+  {
+    id: 3,
+    name: "Sonamarg",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Discover the Golden Meadow, majestic mountains, glaciers, and stunning Himalayan landscapes.",
+  },
+  {
+    id: 4,
+    name: "Yusmarg",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Escape into peaceful meadows, dense pine forests, and beautiful mountain scenery.",
+  },
+  {
+    id: 5,
+    name: "Doodhpathri",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1693999024492-8598a389ac7d?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Relax among lush green meadows, flowing streams, and spectacular mountain surroundings.",
+  },
+  {
+    id: 6,
+    name: "Aru Valley",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1661747340818-df15f186554e?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Enjoy breathtaking alpine meadows, mountain streams, pine forests, and scenic trekking routes.",
+  },
+  {
+    id: 7,
+    name: "Aharbal",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Visit the spectacular Aharbal Waterfall surrounded by lush forests and peaceful mountain landscapes.",
+  },
+  {
+    id: 8,
+    name: "Bangus Valley",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Discover untouched alpine meadows, rolling hills, and a serene landscape away from the crowds.",
+  },
+  {
+    id: 9,
+    name: "Lolab Valley",
+    country: "Kashmir, India",
+    image:
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=85",
+    description:
+      "Explore a hidden paradise of green meadows, forests, streams, and traditional Kashmiri villages.",
+  },
+];
   
   export default function DestinationsPage() {
  
