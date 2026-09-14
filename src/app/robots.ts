@@ -1,8 +1,8 @@
-import { MetadataRoute } from "../../node_modules/next/types"
+import { MetadataRoute } from "next"
 
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = 'https://www.royaljourneytourskashmir.com'
+    const baseUrl = 'https://royaljourneytourskashmir.com'
     return {
         rules: {
             userAgent: '*',

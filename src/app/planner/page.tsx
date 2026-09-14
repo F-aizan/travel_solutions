@@ -2,6 +2,16 @@
 
 import Hero from "@/components/hero/page";
 import React, { ChangeEvent, useState } from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Plan Your Kashmir Trip",
+  description:
+    "Plan your perfect Kashmir trip with Royal Journey Tours Kashmir.",
+  alternates: {
+    canonical: "/planner",
+  },
+};
 
 export default function TripPlannerPage() {
   const [trip, setTrip] = useState({

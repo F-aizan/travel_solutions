@@ -1,4 +1,14 @@
 import Hero from "@/components/hero/page";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn more about Royal Journey Tours Kashmir and our Kashmir travel services.",
+  alternates: {
+    canonical: "/about",
+  },
+};
 
 export default function AboutPage() {
     return (

@@ -1,4 +1,14 @@
 import Hero from "@/components/hero/page";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Contact Royal Journey Tours Kashmir to plan your Kashmir trip.",
+  alternates: {
+    canonical: "/contact",
+  },
+};
 
 export default function ContactPage() {
     return (

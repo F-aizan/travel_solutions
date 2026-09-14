@@ -1,4 +1,5 @@
 import Hero from "@/components/hero/page";
+import type { Metadata } from "next";
 
 const destinations = [
   {
@@ -83,6 +84,15 @@ const destinations = [
       "Explore a hidden paradise of green meadows, forests, streams, and traditional Kashmiri villages.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Explore Amazing Destinations",
+  description:
+    "Explore amazing destinations with Royal Journey Tours Kashmir.",
+  alternates: {
+    canonical: "/destinations",
+  },
+};
   
   export default function DestinationsPage() {
  
