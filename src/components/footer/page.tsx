@@ -8,13 +8,14 @@ import {
 import {
   siFacebook,
   siInstagram,
+  SimpleIcon,
   siX,
   siYoutube,
 } from "simple-icons";
 
 export default function Footer() {
 
-  function BrandIcon({ icon, size = 20 }) {
+  function BrandIcon({ icon, size = 20 }: { icon: SimpleIcon; size?: number }) {
     return (
       <svg
         role="img"
