@@ -189,10 +189,6 @@ const destinations = [
                     <h3 className="text-2xl font-bold">
                       {destination.name}
                     </h3>
-  
-                    <span className="font-semibold text-cyan-600">
-                      {destination.price}
-                    </span>
                   </div>
   
                   <p className="mt-1 text-sm text-slate-500">
