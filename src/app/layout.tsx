@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://royaljourneytourskashmir.com"),
+  metadataBase: new URL("https://www.royaljourneytourskashmir.com"),
 
   title: {
     default: "Royal Journey Tours Kashmir | Kashmir Travel & Tour Packages",
