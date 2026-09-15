@@ -1,5 +1,7 @@
 import Hero from "@/components/hero/page";
 import type { Metadata } from "next";
+import { PlaneIcon, Star, Globe } from "lucide-react";
+
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -16,27 +18,10 @@ export default function AboutPage() {
         {/* Hero Section */}
         <Hero 
           image =  "url('https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1920&q=80')"
-          title1 = "About Travel Solutions,"
+          title1 = "About Royal Journey Tours Kashmir,"
           title2 = "Creating Memorable Experience"
           description = "We help travelers discover extraordinary destinations, plan seamless journeys, and create unforgettable memories across the globe."
         />
-        {/* <section className="relative overflow-hidden bg-gradient-to-r from-cyan-600 to-blue-700 py-24">
-          <div className="mx-auto max-w-7xl px-6 text-center text-white">
-            <span className="rounded-full bg-white/20 px-4 py-2 text-sm font-medium backdrop-blur-sm">
-              
-            </span>
-  
-            <h1 className="mt-6 text-5xl font-bold md:text-7xl">
-              
-              <span className="block">Travel Experiences</span>
-            </h1>
-  
-            <p className="mx-auto mt-6 max-w-3xl text-lg text-cyan-100">
-              
-            </p>
-          </div>
-        </section> */}
-  
         {/* Our Story */}
         <section className="mx-auto max-w-7xl px-6 py-20">
           <div className="grid items-center gap-16 lg:grid-cols-2">
@@ -50,7 +35,7 @@ export default function AboutPage() {
               </h2>
   
               <p className="mt-6 text-lg leading-relaxed text-slate-600">
-                Travel Solutions was founded with one simple mission:
+                Royal Journey Tours Kashmir was founded with one simple mission:
                 to make travel planning easier, smarter, and more
                 enjoyable for everyone.
               </p>
@@ -75,7 +60,7 @@ export default function AboutPage() {
         {/* Stats */}
         <section className="bg-white py-20">
           <div className="mx-auto max-w-7xl px-6">
-            <div className="grid gap-8 text-center md:grid-cols-4">
+            <div className="grid gap-8 text-center md:grid-cols-3">
               <div>
                 <h3 className="text-5xl font-bold text-cyan-600">
                   500+
@@ -102,15 +87,6 @@ export default function AboutPage() {
                   Travel Guides
                 </p>
               </div>
-  
-              <div>
-                <h3 className="text-5xl font-bold text-cyan-600">
-                  20+
-                </h3>
-                <p className="mt-3 text-slate-600">
-                  Countries Covered
-                </p>
-              </div>
             </div>
           </div>
         </section>
@@ -129,19 +105,29 @@ export default function AboutPage() {
   
           <div className="mt-16 grid gap-8 md:grid-cols-3">
             <div className="rounded-3xl bg-white p-8 shadow-lg">
-              <div className="mb-4 text-5xl">🌍</div>
+              <div className="mb-4 text-5xl">
+              <Globe
+                  size={50}
+                  className="shrink-0 text-cyan-400"
+                />
+              </div>
   
               <h3 className="text-2xl font-semibold text-slate-900">
-                Global Destinations
+                Exciting Destinations
               </h3>
   
               <p className="mt-4 text-slate-600">
-                Explore curated destinations from around the world.
+                Explore curated destinations from around Kashmir Valley.
               </p>
             </div>
   
             <div className="rounded-3xl bg-white p-8 shadow-lg">
-              <div className="mb-4 text-5xl">✈️</div>
+              <div className="mb-4 text-5xl">                
+              <PlaneIcon
+                  size={50}
+                  className="shrink-0 text-cyan-400"
+                />
+              </div>
   
               <h3 className="text-2xl font-semibold text-slate-900">
                 Easy Planning
@@ -153,7 +139,12 @@ export default function AboutPage() {
             </div>
   
             <div className="rounded-3xl bg-white p-8 shadow-lg">
-              <div className="mb-4 text-5xl">⭐</div>
+              <div className="mb-4 text-5xl">
+              <Star
+                  size={50}
+                  className="shrink-0 text-cyan-400"
+                />
+              </div>
   
               <h3 className="text-2xl font-semibold text-slate-900">
                 Trusted Experience
@@ -162,44 +153,6 @@ export default function AboutPage() {
               <p className="mt-4 text-slate-600">
                 Thousands of travelers trust us for their adventures.
               </p>
-            </div>
-          </div>
-        </section>
-  
-        {/* Team Section */}
-        <section className="bg-white py-20">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="text-center">
-              <span className="text-sm font-semibold uppercase tracking-wider text-cyan-600">
-                Our Team
-              </span>
-  
-              <h2 className="mt-3 text-4xl font-bold text-slate-900">
-                Meet The People Behind Travel Solutions
-              </h2>
-            </div>
-  
-            <div className="mt-16 grid gap-8 md:grid-cols-3">
-              {[
-                "Founder & CEO",
-                "Travel Consultant",
-                "Destination Expert",
-              ].map((role, index) => (
-                <div
-                  key={index}
-                  className="rounded-3xl bg-slate-50 p-8 text-center"
-                >
-                  <div className="mx-auto h-32 w-32 rounded-full bg-slate-200" />
-  
-                  <h3 className="mt-6 text-2xl font-semibold text-slate-900">
-                    Team Member
-                  </h3>
-  
-                  <p className="mt-2 text-cyan-600">
-                    {role}
-                  </p>
-                </div>
-              ))}
             </div>
           </div>
         </section>

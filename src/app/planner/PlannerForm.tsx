@@ -2,6 +2,7 @@
 
 import Hero from "@/components/hero/page";
 import React, { ChangeEvent, useState } from "react";
+import { Map, Plane, CurrencyIcon } from "lucide-react";
 
 export default function TripPlannerPage() {
   const [trip, setTrip] = useState({
@@ -195,7 +196,7 @@ export default function TripPlannerPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="bg-white py-20">
+      <section className="slate-300 py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center">
             <h2 className="text-4xl font-bold">
@@ -209,8 +210,13 @@ export default function TripPlannerPage() {
 
           <div className="mt-16 grid gap-8 md:grid-cols-3">
             <div className="rounded-3xl bg-slate-50 p-8">
-              <div className="text-5xl">🗺️</div>
-              <h3 className="mt-4 text-2xl font-bold">
+              <div className="text-5xl">
+              <Map
+                  size={50}
+                  className="shrink-0 text-cyan-400"
+                />
+              </div>
+              <h3 className="mt-4 text-slate-300 text-2xl font-bold">
                 Smart Planning
               </h3>
               <p className="mt-3 text-slate-600">
@@ -219,8 +225,13 @@ export default function TripPlannerPage() {
             </div>
 
             <div className="rounded-3xl bg-slate-50 p-8">
-              <div className="text-5xl">💰</div>
-              <h3 className="mt-4 text-2xl font-bold">
+              <div className="text-5xl">
+              <CurrencyIcon
+                  size={50}
+                  className="shrink-0 text-cyan-400"
+                />
+              </div>
+              <h3 className="mt-4 text-slate-300 text-2xl font-bold">
                 Budget Friendly
               </h3>
               <p className="mt-3 text-slate-600">
@@ -229,8 +240,13 @@ export default function TripPlannerPage() {
             </div>
 
             <div className="rounded-3xl bg-slate-50 p-8">
-              <div className="text-5xl">✈️</div>
-              <h3 className="mt-4 text-2xl font-bold">
+              <div className="text-5xl">
+              <Plane
+                  size={50}
+                  className="shrink-0 text-cyan-400"
+                />
+              </div>
+              <h3 className="mt-4 text-slate-300 text-2xl font-bold">
                 Personalized Trips
               </h3>
               <p className="mt-3 text-slate-600">

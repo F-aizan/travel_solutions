@@ -37,7 +37,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h2 className="text-2xl font-bold text-white">
-              Royal Journey
+              Royal Journey Tours
             </h2>
 
             <p className="mt-4 leading-relaxed text-gray-400">
@@ -134,7 +134,7 @@ export default function Footer() {
                   className="mt-0.5 shrink-0 text-cyan-400"
                 />
 
-                <span>Nowhatta, Srinagar, Kashmir</span>
+                <span>Nowhatta Chowk Near J&K Bank, Srinagar, Kashmir</span>
               </li>
 
               {/* Phone */}
@@ -196,18 +196,6 @@ export default function Footer() {
     <BrandIcon icon={siInstagram} size={19} />
   </a>
 
-  {/* X */}
-  <a
-    href="#"
-    aria-label="X"
-    className="flex h-10 w-10 items-center justify-center rounded-full
-               bg-slate-800 text-gray-300
-               transition-all duration-300
-               hover:-translate-y-1 hover:bg-black hover:text-white"
-  >
-    <BrandIcon icon={siX} size={18} />
-  </a>
-
   {/* YouTube */}
   <a
     href="#"
@@ -230,7 +218,7 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-500 md:flex-row">
           <p>
-            © {new Date().getFullYear()} Royal Journey. All rights
+            © {new Date().getFullYear()} Royal Journey Tours. All rights
             reserved.
           </p>
         </div>

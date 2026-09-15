@@ -1,5 +1,11 @@
 import Hero from "@/components/hero/page";
 import type { Metadata } from "next";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -16,27 +22,10 @@ export default function ContactPage() {
         {/* Hero Section */}
         <Hero 
           image = "url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1920&q=80')"
-          title1 = "Contact Travel Solutions"
+          title1 = "Contact Royal Journey Tours Kashmir"
           title2 = "Let's Plan Your Next Adventure"
           description = "Have questions about destinations, trip planning, or travel packages? Our team is ready to help."
         />
-        {/* <section className="relative overflow-hidden bg-gradient-to-r from-cyan-600 to-blue-700 py-24">
-          <div className="mx-auto max-w-7xl px-6 text-center text-white">
-            <span className="rounded-full bg-white/20 px-4 py-2 text-sm font-medium backdrop-blur-sm">
-              
-            </span>
-  
-            <h1 className="mt-6 text-5xl font-bold md:text-7xl">
-              
-              <span className="block"></span>
-            </h1>
-  
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-cyan-100">
-              Have questions about destinations, trip planning, or travel
-              packages? Our team is ready to help.
-            </p>
-          </div>
-        </section> */}
   
         {/* Contact Section */}
         <section className="mx-auto max-w-7xl px-6 py-20">
@@ -60,49 +49,61 @@ export default function ContactPage() {
               <div className="mt-10 space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="rounded-xl bg-cyan-100 p-4">
-                    📍
+                  <MapPin
+                  size={20}
+                  className="shrink-0 text-cyan-400"
+                />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900">
                       Office Address
                     </h3>
                     <p className="text-slate-600">
-                      Srinagar, Kashmir
+                    Nowhatta Chowk Near J&K Bank, Srinagar, Kashmir
                     </p>
                   </div>
                 </div>
   
                 <div className="flex items-start gap-4">
                   <div className="rounded-xl bg-cyan-100 p-4">
-                    📞
+                  <Phone
+                  size={20}
+                  className="shrink-0 text-cyan-400"
+                />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900">
                       Phone Number
                     </h3>
                     <p className="text-slate-600">
-                      +91 98765 43210
+                      +91 9682310254
                     </p>
                   </div>
                 </div>
   
                 <div className="flex items-start gap-4">
                   <div className="rounded-xl bg-cyan-100 p-4">
-                    ✉️
+                  <Mail
+                  size={20}
+                  className="shrink-0 text-cyan-400"
+                />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900">
                       Email Address
                     </h3>
                     <p className="text-slate-600">
-                      info@travelsolutions.com
+                      royaljourneytnt786@gmail.com
                     </p>
                   </div>
                 </div>
   
                 <div className="flex items-start gap-4">
                   <div className="rounded-xl bg-cyan-100 p-4">
-                    ⏰
+                  <Clock
+                  size={20}
+                  className="shrink-0 text-cyan-400"
+                />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900">
@@ -112,7 +113,7 @@ export default function ContactPage() {
                       Monday - Saturday
                     </p>
                     <p className="text-slate-600">
-                      9:00 AM - 6:00 PM
+                      10:00 AM - 6:00 PM
                     </p>
                   </div>
                 </div>
@@ -185,14 +186,7 @@ export default function ContactPage() {
         <section className="pb-20">
           <div className="mx-auto max-w-7xl px-6">
             <div className="flex h-96 items-center justify-center rounded-3xl bg-slate-200 text-center">
-              <div>
-                <h3 className="text-2xl font-bold text-slate-700">
-                  Interactive Map
-                </h3>
-                <p className="mt-2 text-slate-500">
-                  Add Google Maps integration later
-                </p>
-              </div>
+              <iframe src="https://www.google.co.in/maps/place/Royal+Journey+Tour+and+Travels/@34.0991078,74.8105392,17z/data=!3m1!4b1!4m6!3m5!1s0x38e1856dc6d5e29b:0xdb9bdea562ac2fe!8m2!3d34.0991078!4d74.8131141!16s%2Fg%2F11s_xpzzm5?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D" width="100%" height="400" style={{ border: 0 }} loading="lazy" allowFullScreen referrerPolicy="no-referrer-when-downgrade" title="Royal Journey Tours Location" />
             </div>
           </div>
         </section>
