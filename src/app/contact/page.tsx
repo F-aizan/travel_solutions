@@ -191,7 +191,7 @@ export default function ContactPage() {
             width="100%" 
             height="400"  
             loading="lazy" 
-            referrerpolicy="strict-origin-when-cross-origin">
+            referrerPolicy="strict-origin-when-cross-origin">
             </iframe>
             </div>
           </div>
