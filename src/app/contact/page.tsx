@@ -189,8 +189,7 @@ export default function ContactPage() {
             <iframe 
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d211505.19655728457!2d74.8060672!3d34.0754432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1856dc6d5e29b%3A0xdb9bdea562ac2fe!2sRoyal%20Journey%20Tour%20and%20Travels!5e0!3m2!1sen!2sin!4v1789581924023!5m2!1sen!2sin" 
             width="100%" 
-            height="400" 
-            allowFullScreen="" 
+            height="400"  
             loading="lazy" 
             referrerpolicy="strict-origin-when-cross-origin">
             </iframe>
