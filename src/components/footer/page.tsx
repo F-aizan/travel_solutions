@@ -134,7 +134,7 @@ export default function Footer() {
                   className="mt-0.5 shrink-0 text-cyan-400"
                 />
 
-                <span>Nowhatta Chowk Near J&K Bank, Srinagar, Kashmir</span>
+                <span>Ist Floor Zaroo Complex Nowhatta Chowk Near J&K Bank, Srinagar, Kashmir 190001</span>
               </li>
 
               {/* Phone */}

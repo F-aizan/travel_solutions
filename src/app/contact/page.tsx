@@ -59,7 +59,7 @@ export default function ContactPage() {
                       Office Address
                     </h3>
                     <p className="text-slate-600">
-                    Nowhatta Chowk Near J&K Bank, Srinagar, Kashmir
+                    Ist Floor Zaroo Complex Nowhatta Chowk Near J&K Bank, Srinagar, Kashmir 190001
                     </p>
                   </div>
                 </div>
@@ -186,7 +186,14 @@ export default function ContactPage() {
         <section className="pb-20">
           <div className="mx-auto max-w-7xl px-6">
             <div className="flex h-96 items-center justify-center rounded-3xl bg-slate-200 text-center">
-              <iframe src="https://www.google.co.in/maps/place/Royal+Journey+Tour+and+Travels/@34.0991078,74.8105392,17z/data=!3m1!4b1!4m6!3m5!1s0x38e1856dc6d5e29b:0xdb9bdea562ac2fe!8m2!3d34.0991078!4d74.8131141!16s%2Fg%2F11s_xpzzm5?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D" width="100%" height="400" style={{ border: 0 }} loading="lazy" allowFullScreen referrerPolicy="no-referrer-when-downgrade" title="Royal Journey Tours Location" />
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d211505.19655728457!2d74.8060672!3d34.0754432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1856dc6d5e29b%3A0xdb9bdea562ac2fe!2sRoyal%20Journey%20Tour%20and%20Travels!5e0!3m2!1sen!2sin!4v1789581924023!5m2!1sen!2sin" 
+            width="100%" 
+            height="400" 
+            allowFullScreen="" 
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
             </div>
           </div>
         </section>
