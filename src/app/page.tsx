@@ -14,12 +14,7 @@ export default function Home() {
         and turn your dream vacation into reality."
       />
       <Destinations />
-      <Testimonial 
-      name="Anonymous User"
-      title="An Unforgettable Kashmir Journey" 
-      review="Our Kashmir trip was beautifully planned from start to finish. The hotels were comfortable, the itinerary was well organized, and every destination was breathtaking. Royal Journey Tours made our holiday completely stress-free." 
-      image="/testm.png" />
-      <CTA />
+      <Testimonial />
     </>
   );
 }
