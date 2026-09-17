@@ -15,6 +15,7 @@ export default function Home() {
       />
       <Destinations />
       <Testimonial />
+      <CTA />
     </>
   );
 }
