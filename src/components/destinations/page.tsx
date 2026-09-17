@@ -12,8 +12,7 @@ const destinations = [
     id: 2,
     name: "Pahalgam",
     country: "Kashmir, India",
-    image:
-      "https://images.unsplash.com/photo-1686503069683-9029e0b2ad51?auto=format&fit=crop&w=1200&q=85",
+    image: "https://images.unsplash.com/photo-1634922719192-b4503cf15e07?auto=format&fit=crop&w=1200&q=85",
     description:
       "Discover beautiful valleys, pine forests, rivers, and the scenic Betaab Valley.",
   },
