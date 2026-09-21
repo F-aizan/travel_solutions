@@ -105,7 +105,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <article
               key={testimonial.id}
-              className="relative min-w-full snap-center overflow-hidden rounded-3xl bg-[#df4b5d] px-6 py-10 text-white sm:px-10 lg:px-14"
+              className="relative min-w-full snap-center overflow-hidden rounded-3xl bg-gradient-to-r from-cyan-600 to-blue-700 px-6 py-10 text-white sm:px-10 lg:px-14"
             >
               <div className="grid items-center gap-10 lg:grid-cols-[40%_60%]">
 

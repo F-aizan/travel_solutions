@@ -1,7 +1,11 @@
+import Link from 'next/link'
+
+
 const destinations = [
   {
     id: 1,
     name: "Gulmarg",
+    slug: "gulmarg",
     country: "Kashmir, India",
     image:
       "https://images.unsplash.com/photo-1676441019594-07142b925bc2?auto=format&fit=crop&w=1200&q=85",
@@ -11,6 +15,7 @@ const destinations = [
   {
     id: 2,
     name: "Pahalgam",
+    slug: "pahalgam",
     country: "Kashmir, India",
     image: "https://images.unsplash.com/photo-1634922719192-b4503cf15e07?auto=format&fit=crop&w=1200&q=85",
     description:
@@ -19,6 +24,7 @@ const destinations = [
   {
     id: 3,
     name: "Sonamarg",
+    slug: "sonamarg",
     country: "Kashmir, India",
     image:
       "https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1200&q=85",
@@ -28,6 +34,7 @@ const destinations = [
   {
     id: 4,
     name: "Yusmarg",
+    slug: "yusmarg",
     country: "Kashmir, India",
     image:
       "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=1200&q=85",
@@ -37,6 +44,7 @@ const destinations = [
   {
     id: 5,
     name: "Doodhpathri",
+    slug: "doodhpathri",
     country: "Kashmir, India",
     image:
       "https://images.unsplash.com/photo-1693999024492-8598a389ac7d?auto=format&fit=crop&w=1200&q=85",
@@ -46,6 +54,7 @@ const destinations = [
   {
     id: 6,
     name: "Aru Valley",
+    slug: "aru valley",
     country: "Kashmir, India",
     image:
       "https://images.unsplash.com/photo-1706628416807-7994b12d64f8?auto=format&fit=crop&w=1200&q=85",
@@ -78,7 +87,7 @@ const destinations = [
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {destinations.map((destination) => (
               <div
-                key={destination.id}
+                key={destination.slug}
                 className="group overflow-hidden rounded-3xl bg-white shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
               >
                 {/* Image */}
@@ -107,9 +116,9 @@ const destinations = [
                     {destination.description}
                   </p>
   
-                  <button className="rounded-xl bg-cyan-500 px-5 py-3 font-medium text-white transition hover:bg-cyan-600">
+                  <Link className="rounded-xl bg-cyan-500 px-5 py-3 font-medium text-white transition hover:bg-cyan-600" href={`/destinations/${destination.slug}`}>
                     Explore More
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -117,9 +126,9 @@ const destinations = [
   
           {/* View All Button */}
           <div className="mt-12 text-center cursor-pointer">
-            <a className="rounded-xl border-2 border-cyan-500 px-8 py-4 font-semibold text-cyan-600 transition hover:bg-cyan-500 hover:text-white" href="/destinations">
+            <Link className="rounded-xl border-2 border-cyan-500 px-8 py-4 font-semibold text-cyan-600 transition hover:bg-cyan-500 hover:text-white" href="/destinations">
               View All Destinations
-            </a>
+            </Link>
           </div>
         </div>
       </section>

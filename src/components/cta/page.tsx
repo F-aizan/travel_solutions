@@ -14,7 +14,7 @@ export default function CTA() {
           </span>
   
           <h2 className="mt-6 text-4xl font-bold md:text-6xl">
-            Ready To Explore The World?
+            Ready To Explore Kashmir 
           </h2>
   
           <p className="mx-auto mt-6 max-w-2xl text-lg text-cyan-100">
