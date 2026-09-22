@@ -1,9 +1,5 @@
 import Link from "next/link";
-import {
-  MapPin,
-  Phone,
-  Mail,
-} from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 import {
   siFacebook,
@@ -14,7 +10,6 @@ import {
 } from "simple-icons";
 
 export default function Footer() {
-
   function BrandIcon({ icon, size = 20 }: { icon: SimpleIcon; size?: number }) {
     return (
       <svg
@@ -33,7 +28,6 @@ export default function Footer() {
     <footer className="bg-slate-950 text-gray-300">
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-
           {/* Brand */}
           <div>
             <h2 className="text-2xl font-bold text-white">
@@ -41,8 +35,8 @@ export default function Footer() {
             </h2>
 
             <p className="mt-4 leading-relaxed text-gray-400">
-              Discover breathtaking destinations, plan unforgettable trips,
-              and create memories that last a lifetime.
+              Discover breathtaking destinations, plan unforgettable trips, and
+              create memories that last a lifetime.
             </p>
           </div>
 
@@ -54,10 +48,7 @@ export default function Footer() {
 
             <ul className="space-y-3">
               <li>
-                <Link
-                  href="/"
-                  className="transition hover:text-cyan-400"
-                >
+                <Link href="/" className="transition hover:text-cyan-400">
                   Home
                 </Link>
               </li>
@@ -82,6 +73,15 @@ export default function Footer() {
 
               <li>
                 <Link
+                  href="/packages"
+                  className="transition hover:text-cyan-400"
+                >
+                  Packages
+                </Link>
+              </li>
+
+              <li>
+                <Link
                   href="/contact"
                   className="transition hover:text-cyan-400"
                 >
@@ -98,24 +98,34 @@ export default function Footer() {
             </h3>
 
             <ul className="space-y-3">
-              <li className="transition hover:text-cyan-400">
-                Gulmarg
+              <li>
+                <Link className="transition hover:text-cyan-400" href="/destinations/gulmarg">
+                  Gulmarg
+                </Link>
               </li>
 
-              <li className="transition hover:text-cyan-400">
-                Pahalgam
+              <li>
+                <Link className="transition hover:text-cyan-400" href="/destinations/pahalgam">
+                  Pahalgam
+                </Link>
               </li>
 
-              <li className="transition hover:text-cyan-400">
-                Sonamarg
+              <li>
+                <Link className="transition hover:text-cyan-400" href="/destinations/sonamarg">
+                  Sonamarg
+                </Link>
               </li>
 
-              <li className="transition hover:text-cyan-400">
-                Yusmarg
+              <li>
+                <Link className="transition hover:text-cyan-400" href="/destinations/yusmarg">
+                  Yusmarg
+                </Link>
               </li>
 
-              <li className="transition hover:text-cyan-400">
-                Doodhpathri
+              <li>
+                <Link className="transition hover:text-cyan-400" href="/destinations/doodhpathri">
+                  Doodhpathri
+                </Link>
               </li>
             </ul>
           </div>
@@ -129,20 +139,17 @@ export default function Footer() {
             <ul className="space-y-4">
               {/* Location */}
               <li className="flex items-start gap-3">
-                <MapPin
-                  size={20}
-                  className="mt-0.5 shrink-0 text-cyan-400"
-                />
+                <MapPin size={20} className="mt-0.5 shrink-0 text-cyan-400" />
 
-                <span>Ist Floor Zaroo Complex Nowhatta Chowk Near J&K Bank, Srinagar, Kashmir 190001</span>
+                <span>
+                  Ist Floor Zaroo Complex Nowhatta Chowk Near J&K Bank,
+                  Srinagar, Kashmir 190001
+                </span>
               </li>
 
               {/* Phone */}
               <li className="flex items-center gap-3">
-                <Phone
-                  size={20}
-                  className="shrink-0 text-cyan-400"
-                />
+                <Phone size={20} className="shrink-0 text-cyan-400" />
 
                 <a
                   href="tel:+919876543210"
@@ -154,10 +161,7 @@ export default function Footer() {
 
               {/* Email */}
               <li className="flex items-center gap-3">
-                <Mail
-                  size={20}
-                  className="shrink-0 text-cyan-400"
-                />
+                <Mail size={20} className="shrink-0 text-cyan-400" />
 
                 <a
                   href="mailto:info@travelsolutions.com"
@@ -169,46 +173,44 @@ export default function Footer() {
             </ul>
 
             {/* Social Icons */}
-{/* Social Icons */}
-<div className="mt-7 flex gap-3">
-
-  {/* Facebook */}
-  <a
-    href="#"
-    aria-label="Facebook"
-    className="flex h-10 w-10 items-center justify-center rounded-full
+            {/* Social Icons */}
+            <div className="mt-7 flex gap-3">
+              {/* Facebook */}
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="flex h-10 w-10 items-center justify-center rounded-full
                bg-slate-800 text-gray-300
                transition-all duration-300
                hover:-translate-y-1 hover:bg-[#1877F2] hover:text-white"
-  >
-    <BrandIcon icon={siFacebook} size={19} />
-  </a>
+              >
+                <BrandIcon icon={siFacebook} size={19} />
+              </a>
 
-  {/* Instagram */}
-  <a
-    href="#"
-    aria-label="Instagram"
-    className="flex h-10 w-10 items-center justify-center rounded-full
+              {/* Instagram */}
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="flex h-10 w-10 items-center justify-center rounded-full
                bg-slate-800 text-gray-300
                transition-all duration-300
                hover:-translate-y-1 hover:bg-[#E4405F] hover:text-white"
-  >
-    <BrandIcon icon={siInstagram} size={19} />
-  </a>
+              >
+                <BrandIcon icon={siInstagram} size={19} />
+              </a>
 
-  {/* YouTube */}
-  <a
-    href="#"
-    aria-label="YouTube"
-    className="flex h-10 w-10 items-center justify-center rounded-full
+              {/* YouTube */}
+              <a
+                href="#"
+                aria-label="YouTube"
+                className="flex h-10 w-10 items-center justify-center rounded-full
                bg-slate-800 text-gray-300
                transition-all duration-300
                hover:-translate-y-1 hover:bg-[#FF0000] hover:text-white"
-  >
-    <BrandIcon icon={siYoutube} size={20} />
-  </a>
-
-</div>
+              >
+                <BrandIcon icon={siYoutube} size={20} />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -226,4 +228,3 @@ export default function Footer() {
     </footer>
   );
 }
-

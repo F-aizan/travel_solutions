@@ -2,11 +2,52 @@ import { notFound } from "next/navigation";
 import { MapPin, CheckCircle, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { destinations } from "@/data/destinations";
+import Metadata from 'next'
 
 interface PageProps {
   params: Promise<{
     slug: string;
   }>;
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+
+  const destination = destinations.find(
+    (item) => item.slug === slug
+  );
+
+  if (!destination) {
+    return {
+      title: "Destination Not Found | Royal Journey Tours Kashmir",
+      description:
+        "Explore Kashmir destinations with Royal Journey Tours Kashmir.",
+    };
+  }
+
+  return {
+    title: `${destination.name} Kashmir | Travel Guide & Tour Packages`,
+    description: `${destination.description} Explore ${destination.name}, Kashmir with Royal Journey Tours and plan your perfect Kashmir trip.`,
+    alternates: {
+      canonical: `https://www.royaljourneytourskashmir.com/destinations/${destination.slug}`,
+    },
+    openGraph: {
+      title: `${destination.name} Kashmir | Royal Journey Tours`,
+      description: destination.description,
+      url: `https://www.royaljourneytourskashmir.com/destinations/${destination.slug}`,
+      images: [
+        {
+          url: destination.image,
+          width: 1600,
+          height: 900,
+          alt: `${destination.name}, Kashmir`,
+        },
+      ],
+      type: "website",
+    },
+  };
 }
 
 export default async function DestinationPage({ params }: PageProps) {
