@@ -15,6 +15,10 @@ const navItems = [
     href: "/destinations",
   },
   {
+    name: "Packages",
+    href: "/packages",
+  },
+  {
     name: "Trip Planner",
     href: "/planner",
   },
@@ -50,7 +54,7 @@ export default function Navbar() {
             >
               <div className="relative overflow-hidden rounded-xl bg-white shadow-md transition duration-300 group-hover:scale-105 group-hover:shadow-lg">
                 <img
-                  src="/logo.jpg"
+                  src="/logo.png"
                   alt="Royal Journey Tours"
                   className="h-12 w-12 object-cover"
                 />

@@ -1,6 +1,7 @@
 import CTA from "@/components/cta/page";
 import Destinations from "@/components/destinations/page";
 import Hero from "@/components/hero/page";
+import Packages from "@/components/packages/page";
 import Testimonial from "@/components/testimonial/page";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         and turn your dream vacation into reality."
       />
       <Destinations />
+      <Packages />
       <Testimonial />
       <CTA />
     </>
