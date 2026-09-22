@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import { MapPin, CheckCircle, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { destinations } from "@/data/destinations";
-import Metadata from 'next'
 
 interface PageProps {
   params: Promise<{
@@ -12,7 +11,7 @@ interface PageProps {
 
 export async function generateMetadata({
   params,
-}: PageProps): Promise<Metadata> {
+}: PageProps) {
   const { slug } = await params;
 
   const destination = destinations.find(
